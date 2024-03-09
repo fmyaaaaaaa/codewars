@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import solution
 
-class FunctionKtTest {
+class FunctionM3O5KtTestM3O5 {
     @Test
     fun testFixed() {
         assertEquals(23, solution(10))
