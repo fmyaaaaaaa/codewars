@@ -14,13 +14,11 @@ package kyu6.two_sum
 object TwoSum {
     fun twoSum(numbers: IntArray, target: Int): Pair<Int,Int> {
         var result: Pair<Int, Int> = Pair(0, 0)
-        run loop@ {
-            numbers.forEachIndexed { index, _ ->
-                val findIndex = numbers.indexOfFirst { target == (numbers[index] + it) }
-                if (findIndex != -1 && index != findIndex) {
-                    result = Pair(index, findIndex)
-                    return@loop
-                }
+        numbers.forEachIndexed loop@ { index, _ ->
+            val findIndex = numbers.indexOfFirst { target == (numbers[index] + it) }
+            if (findIndex != -1 && index != findIndex) {
+                result = Pair(index, findIndex)
+                return@loop
             }
         }
         return result
