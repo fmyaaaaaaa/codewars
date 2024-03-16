@@ -3,7 +3,7 @@ package kyu6.two_sum
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class FunctionTSTest {
+class FunctionTSKtTest {
     fun runTest(r: IntArray, n: Int, refSol: Pair<Int,Int>) {
         val userSol = TwoSum.twoSum(r,n).let { (x,y) -> if (x > y) Pair(y,x) else Pair(x,y) }
         assertEquals(refSol,userSol)
