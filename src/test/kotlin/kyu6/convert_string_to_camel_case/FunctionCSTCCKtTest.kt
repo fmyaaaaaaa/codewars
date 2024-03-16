@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import toCamelCase
 import kotlin.test.Test
 
-class FunctionCSTCCKtTestCSTCC {
+class FunctionCSTCCKtTest {
     @Test
     fun testFixed() {
         assertEquals("", toCamelCase(""))
